@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" />
+
+    <title>DataBrand</title>
+</head>
+
+<body>
+    <section class="w-full h-[1200px] bg-[url('background.png')] bg-center bg-cover z-40">
+        <header class="w-full h-[70px] flex items-center" id="navbar">
+            <div class="w-[25%] h-[70px] flex justify-end items-center">
+                <img src="databrand.svg" width="200" />
+            </div>
+            <div class="w-[50%] h-[70px] flex items-center justify-center text-white">
+                <div class="mr-6">Home</div>
+                <div class="mr-6">A databrand</div>
+                <div class="mr-6">Soluções</div>
+                <div class="mr-6">Mercados</div>
+                <div class="mr-6">Conteúdos</div>
+            </div>
+            <div class="w-[25%] h-[70px] flex items-center justify-start">
+                <button class="w-[170px] h-[45px] bg-white rounded-md text-[#2d487d]">Fale conosco</button>
+            </div>
+        </header>
+        <section class="w-[60%] flex flex-col header-text">
+            <div class="flex flex-col justify-center pl-[127px] h-[300px]">
+                <div class="font-bold header-text font-size text-[45px] text-white">Gerenciamento de Cores</div>
+                <div class="font-bold header-text font-size text-[45px] text-white pt-8">Automação de processos</div>
+            </div>
+            <div class="h-[100px]">
+                <div class="w-[500px] h-[50px] header-text font-bold text-[20px] pl-[127px] text-white">Soluções em
+                    software e serviços de gerenciamento cores e automação de processos para a indústria gráfica.</div>
+            </div>
+        </section>
+        <button class="w-[350px] h-[50px] bg-white ml-[127px] mt-8 flex items-center justify-center rounded-md">
+            <div class="pb-[2px] pr-8">Converse com o especialista</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+        </button>
+        <div class="w-full h-[200px] bg-yellow-200 z-0"></div>
+    </section>
+    <div class="contact">
+        <a href="https://api.whatsapp.com/send?phone=553130909995&text=Texto%20aqui" target="_blank"
+            class="w-[70px] h-[70px] bg-white rounded-[50%] flex items-center justify-center"
+            style="position:fixed;bottom:20px;right:30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#2d487d" class="bi bi-chat-left-text"
+                viewBox="0 0 16 16">
+                <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path
+                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </a>
+    </div>
+    <div id="demo" class="w-[200px] h-[120px] bg-white fixed bottom-[100px] right-[30px] rounded-md shadow-lg shadow-cyan-500/50 bg-White">
+        <button onclick="myFunction()" class="fixed right-[40px] text-[#2d487d] font-bold text-xl">x</button>
+        <div
+            class="w-[70px] h-[70px] bg-white rounded-[50%] fixed bottom-[180px] right-[90px] bg-[url('bg-logo.png')] bg-contain bg-no-repeat bg-center">
+        </div>
+        <div class="mt-8 pl-4 text-[#2d487d] font-semibold">Possui alguma dúvida ?</div>
+        <div class="pl-4 text-[#2d487d] font-semibold">Estamos a disposição para ajudar.</div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
